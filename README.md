@@ -18,4 +18,4 @@ DB : [notion api](https://developers.notion.com/)
   
   
 ***
-<img src="https://img.shields.io/badge/-Next-transparent?logo=next.js&logoColor=white" /><img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /><img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /><img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
+<img src="https://img.shields.io/badge/-Next-transparent?logo=next.js&logoColor=white" margin="5px"/><img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /><img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /><img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
