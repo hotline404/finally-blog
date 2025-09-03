@@ -7,9 +7,9 @@ function ProjectList({ data }) {
     data.then((e) => setState(e))
   }, [state]) 
   return (
-    <ol className='flex-col text-white text-shadow-pink-500'>
+    <ol className='flex-col text-yellow-400 justify-center'>
       {state?.projects.map((item, index) => {
-        return <li className='text-white text-shadow-yellow-500' id={Math.random()}><a href={`https://github.com/${item}`} target='_blank'>{`project ${index + 1} : ${item}`}</a></li>
+        return <li className='text-yellow-400' id={Math.random()}><a href={`https://github.com/${item}`} target='_blank'>{`project ${index + 1} : ${item}`}</a></li>
       })}
     </ol>
   )
