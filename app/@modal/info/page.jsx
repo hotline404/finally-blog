@@ -45,25 +45,27 @@ function Info() {
 
   return (
     <div className="fixed inset-0 bg-black/70 flex-col items-center justify-center z-50">
-      <div className="flex justify-center mt-16 text-yellow-400 w-[80%]">
-        <img
-          className="h-50 w-50 object-contain rounded-full"
-          src="/my-notion-face-portrait.png"
-          alt="me-image"
-        />
-        <div className="flex-col">
-          <CommonInfo data={res} className="flex-col justify-end " />
-          <SkillInfo data={res} />
-          <p className="ml-3">
-            안녕하세요 혁신의 한 부분이 되려고 하는 개발자 Paskal입니다.
-            잘부탁드려요 흐흐
-          </p>
+      <div className="w-[80%]">
+        <div className="flex justify-center mt-16 text-yellow-400 ">
+          <img
+            className="h-50 w-50 object-contain rounded-full"
+            src="/my-notion-face-portrait.png"
+            alt="me-image"
+          />
+          <div className="flex-col">
+            <CommonInfo data={res} className="flex-col justify-end " />
+            <SkillInfo data={res} />
+            <p className="ml-3">
+              안녕하세요 혁신의 한 부분이 되려고 하는 개발자 Paskal입니다.
+              잘부탁드려요 흐흐
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="flex-col">
-          <ProjectList data={res} />
-          <SnsList data={res} />
+        <div className="flex justify-center">
+          <div className="flex-col">
+            <ProjectList data={res} />
+            <SnsList data={res} />
+          </div>
         </div>
       </div>
 
