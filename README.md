@@ -1,4 +1,4 @@
-<img src="public/my-notion-face-portrait.png" width="100px" height="100px"/> 
+
   
 ## ✅블로그 프로젝트.finally
 원래 만들던 블로그 프로젝트를 더 업그레이드 시켜서 배포 했습니다.
@@ -20,3 +20,4 @@ DB : [<img src="https://img.shields.io/badge/-notion-transparent?logo=notion&log
   
 ## 📬contacts
 [<img src="https://img.shields.io/badge/-cosmoyj7733@gmail.com-EA4335?logo=gmail&logoColor=white" />]() <img src="https://img.shields.io/badge/-cosmoyj@naver.com-03C75A?logo=naver&logoColor=white" /> <img src="https://img.shields.io/badge/-@Paskal_codeat-000000?logo=x&logoColor=white" />
+<img src="public/my-notion-face-portrait.png" width="100px" height="100px"/> 
