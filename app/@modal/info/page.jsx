@@ -61,8 +61,10 @@ function Info() {
             </p>
           </div>
         </div>
+        <div className="flex-col justify-center items-center">
           <ProjectList data={res} />
           <SnsList data={res} />
+        </div>
       </div>
       <BackButton className="[&>button]:text-yellow-300">❌</BackButton>
     </div>
