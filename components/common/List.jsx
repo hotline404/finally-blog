@@ -18,9 +18,9 @@ function List(props) {
       {props.lists.map((list) => {
         return (
           <li key={list.id} onClick={() => onClickHandler(list.id)}>
-            <p>{list.icon}</p>
+            <span>{list.icon}</span>
+            <span>{list.date.date.start}</span>
             <h1>{list.title}</h1>
-            <p>{list.date.date.start}</p>
           </li>
         );
       })}
