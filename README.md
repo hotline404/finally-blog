@@ -4,7 +4,7 @@
   
 ## ✅LINK
 <p align="center">
-[let's go!](https://finally-blog-n8jcmx0yu-paskals-projects-1991f502.vercel.app/)
+{[let's go!](https://finally-blog-n8jcmx0yu-paskals-projects-1991f502.vercel.app/)}
 </p>
   
 ## ✅Environments
