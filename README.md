@@ -1,4 +1,5 @@
- <img src="public/my-notion-face-portrait.png" width="100px" height="100px"/> 
+<img src="public/my-notion-face-portrait.png" width="100px" height="100px"/> 
+  
 ## ✅블로그 프로젝트.finally
 원래 만들던 블로그 프로젝트를 더 업그레이드 시켜서 배포 했습니다.
   
