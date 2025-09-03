@@ -17,5 +17,5 @@ DB : [<img src="https://img.shields.io/badge/-notion-transparent?logo=notion&log
 ```npm run dev```
   
   
-## 📨연락 수단
-<img src="https://img.shields.io/badge/-Next-transparent?logo=next.js&logoColor=white" /> <img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /> <img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
+## 📬contacts
+<img src="https://img.shields.io/badge/-gmail-#EA4335?logo=gmail&logoColor=white" /> <img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /> <img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
