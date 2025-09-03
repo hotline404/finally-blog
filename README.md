@@ -19,5 +19,6 @@ DB : [<img src="https://img.shields.io/badge/-notion-transparent?logo=notion&log
   
   
 ## 📬contacts
-[<img src="https://img.shields.io/badge/-cosmoyj7733@gmail.com-EA4335?logo=gmail&logoColor=white" />]() <img src="https://img.shields.io/badge/-cosmoyj@naver.com-03C75A?logo=naver&logoColor=white" /> <img src="https://img.shields.io/badge/-@Paskal_codeat-000000?logo=x&logoColor=white" />
+[<img src="https://img.shields.io/badge/-cosmoyj7733@gmail.com-EA4335?logo=gmail&logoColor=white" />]() <img src="https://img.shields.io/badge/-cosmoyj@naver.com-03C75A?logo=naver&logoColor=white" /> <img src="https://img.shields.io/badge/-@Paskal_codeat-000000?logo=x&logoColor=white" />  
+  
 <img src="public/my-notion-face-portrait.png" width="100px" height="100px"/> 
