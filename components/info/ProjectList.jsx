@@ -9,7 +9,7 @@ function ProjectList({ data }) {
   return (
     <ol className='flex-col text-white text-shadow-pink-500'>
       {state?.projects.map((item, index) => {
-        return <li id={Math.random()}><a href={`https://github.com/${item}`} target='_blank'>{`project ${index + 1} : ${item}`}</a></li>
+        return <li className='text-white text-shadow-yellow-500' id={Math.random()}><a href={`https://github.com/${item}`} target='_blank'>{`project ${index + 1} : ${item}`}</a></li>
       })}
     </ol>
   )
