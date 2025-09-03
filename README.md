@@ -3,7 +3,7 @@
 원래 만들던 블로그 프로젝트를 더 업그레이드 시켜서 배포 했습니다.
   
 ## ✅블로그 주소입니다.
-[<img src="public/my-notion-face-portrait.png" />](https://finally-blog-n8jcmx0yu-paskals-projects-1991f502.vercel.app/)
+[<img src="public/my-notion-face-portrait.png" width="50px" height="50px"/>](https://finally-blog-n8jcmx0yu-paskals-projects-1991f502.vercel.app/)
   
 ## ✅환경
 배포 : [<img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" />](https://vercel.com/)  
