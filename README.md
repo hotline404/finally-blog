@@ -2,7 +2,7 @@
 ## ✅블로그 프로젝트.finally
 원래 만들던 블로그 프로젝트를 더 업그레이드 시켜서 배포 했습니다.
   
-## ✅블로그 주소입니다.
+## ✅블로그 주소
 [<img src="public/my-notion-face-portrait.png" width="100px" height="100px"/>](https://finally-blog-n8jcmx0yu-paskals-projects-1991f502.vercel.app/)
   
 ## ✅환경
