@@ -18,4 +18,4 @@ DB : [<img src="https://img.shields.io/badge/-notion-transparent?logo=notion&log
   
   
 ## 📬contacts
-<img src="https://img.shields.io/badge/-gmail-#EA4335?logo=gmail&logoColor=white" /> <img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /> <img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
+<img src="https://img.shields.io/badge/-gmail-transparent?logo=gmail&logoColor=white" /> <img src="https://img.shields.io/badge/-Node-transparent?logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/-vercel-transparent?logo=vercel&logoColor=white" /> <img src="https://img.shields.io/badge/-notion-transparent?logo=notion&logoColor=white" />
