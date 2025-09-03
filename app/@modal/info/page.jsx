@@ -57,7 +57,7 @@ function Info() {
           <p className="ml-3">안녕하세요 혁신의 한 부분이 되려고 하는 개발자 Paskal입니다. 잘부탁드려요 흐흐</p>
         </div>
       </div>
-      <div className="text-yellow-400">
+      <div className="flex-col text-yellow-400 justify-center">
         <ProjectList data={res} />
         <SnsList data={res} />
       </div>
