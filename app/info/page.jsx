@@ -34,8 +34,7 @@ function Info() {
   const res = tryGet();
 
   return (
-    <div className="fixed flex flex-col justify-center items-center inset-0 bg-black/70 z-50">
-      {/* <div className="flex flex-col w-[50%] justify-center ">
+      <div className="flex flex-col w-[50%] justify-center ">
         <div className="flex mt-16 text-yellow-400 ">
           <img
             className="h-50 w-50 object-contain rounded-full"
@@ -57,8 +56,6 @@ function Info() {
           </div>
       </div>
 
-      <BackButton className="[&>button]:text-yellow-300">❌</BackButton> */}
-    </div>
   );
 }
 
