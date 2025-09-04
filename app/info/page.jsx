@@ -42,7 +42,7 @@ function Info() {
             src="/my-notion-face-portrait.png"
             alt="me-image"
           />
-          <div className="flex-col">
+          <div className="">
             <CommonInfo data={res} className="flex-col justify-end " />
             <SkillInfo data={res} />
             <p className="ml-3">
@@ -51,7 +51,7 @@ function Info() {
             </p>
           </div>
         </div>
-          <div className="flex flex-row mt-6">
+          <div className="flex mt-6">
             <ProjectList data={res} />
             <SnsList data={res} />
           </div>
