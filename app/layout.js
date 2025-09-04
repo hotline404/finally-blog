@@ -24,7 +24,7 @@ export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`RoundedFixedsys antialiased `}
       >
         <div>{children}</div>
         <div>{modal ? <div>{modal}</div> : <></>}</div>
