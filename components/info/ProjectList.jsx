@@ -7,7 +7,7 @@ function ProjectList({ data }) {
     data.then((e) => setState(e));
   }, [state]);
   return (
-    <div className="w-[cal(50%/2)">
+    <div className="w-[calc(50%/2)">
       <ol className="text-yellow-400">
         /* projects */
         {state?.projects.map((item, index) => {
