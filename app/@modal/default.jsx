@@ -1,7 +1,7 @@
 import React from "react";
 
 function Default() {
-  return null
+  return <div>디폴트</div>
 }
 
 export default Default;
