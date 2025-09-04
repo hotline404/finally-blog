@@ -15,7 +15,7 @@ function SnsList({ data }) {
     }
   }
   return (
-    <ol className="flex flex-col text-white text-shadow-pink-500">
+    <ol className="text-yellow-400">
       /* 📬contacts */
       {state?.sns.map((item) => {
         return (
