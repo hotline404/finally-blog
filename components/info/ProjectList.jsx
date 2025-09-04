@@ -7,9 +7,9 @@ function ProjectList({ data }) {
     data.then((e) => setState(e));
   }, [state]);
   return (
-    <div className="">
+    <div className="w-auto">
       <ol className="text-yellow-400">
-        /* projects */
+        🗂️projects
         {state?.projects.map((item, index) => {
           return (
             <li className="text-yellow-400" id={Math.random()}>

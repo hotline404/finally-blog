@@ -15,9 +15,9 @@ function SnsList({ data }) {
     }
   };
   return (
-    <div className="ml-3 ">
+    <div className="ml-3 w-auto">
       <ol className="text-yellow-400">
-        /* 📬contacts */
+        📬contacts
         {state?.sns.map((item) => {
           return (
             <li id={Math.random()}>
