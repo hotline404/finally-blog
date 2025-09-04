@@ -7,7 +7,7 @@ function ProjectList({ data }) {
     data.then((e) => setState(e));
   }, [state]);
   return (
-    <div className="flex w-auto">
+    <span className="flex w-auto">
       <ol className="text-yellow-400">
         🗂️projects
         {state?.projects.map((item, index) => {
@@ -21,7 +21,7 @@ function ProjectList({ data }) {
           );
         })}
       </ol>
-    </div>
+    </span>
   );
 }
 
