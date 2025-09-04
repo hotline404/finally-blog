@@ -51,7 +51,7 @@ function Info() {
             </p>
           </div>
         </div>
-          <div className="flex mt-6">
+          <div className="flex mt-6 justify-between">
             <ProjectList data={res} />
             <SnsList data={res} />
           </div>
