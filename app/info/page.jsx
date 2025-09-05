@@ -1,4 +1,3 @@
-
 import React from "react";
 import BackButton from "@/components/Button/BackButton";
 import CommonInfo from "@/components/info/CommonInfo";
@@ -51,10 +50,10 @@ function Info() {
             </p>
           </div>
         </div>
-          <div className="flex flex-row mt-6 gap-4">
-            <ProjectList data={res} />
-            <SnsList data={res} />
-          </div>
+        <div className="flex flex-row mt-6 gap-6">
+          <ProjectList data={res} />
+          <SnsList data={res} />
+        </div>
       </div>
 
       <BackButton className="[&>button]:text-yellow-300">❌</BackButton>
