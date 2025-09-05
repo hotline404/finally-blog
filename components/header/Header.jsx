@@ -22,7 +22,7 @@ export default function Header() {
       <SearchBox>
         <form className="w-[100%] flex justify-end" action={useFormState}>
           <Input
-            className="outline-[#31302B]"
+            className='outline-[#31302B]'
             input={{
               name: "검색",
               type: "search",

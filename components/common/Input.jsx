@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 
-function Input({ input, onChange }) {
+function Input({ input, onChange, className }) {
   return (
-      <input onChange={onChange} {...input} />
+      <input className={className} onChange={onChange} {...input} />
   );
 }
 
