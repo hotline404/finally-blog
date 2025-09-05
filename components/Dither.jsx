@@ -6,7 +6,6 @@ import { EffectComposer, wrapEffect } from '@react-three/postprocessing';
 import { Effect } from 'postprocessing';
 import * as THREE from 'three';
 
-import './Dither.css';
 
 const waveVertexShader = `
 precision highp float;
@@ -272,7 +271,7 @@ export default function Dither({
 }) {
   return (
     <Canvas
-      className="dither-container"
+      className="fixed w-full h-full"
       camera={{ position: [0, 0, 6] }}
       dpr={window.devicePixelRatio}
       gl={{ antialias: true, preserveDrawingBuffer: true }}>
