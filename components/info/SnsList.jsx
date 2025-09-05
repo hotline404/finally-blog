@@ -13,7 +13,7 @@ function SnsList({ data }) {
         <img
             src='https://img.shields.io/badge/-x-000000?logo=x&logoColor=white'
             alt='x 로고'
-            className="mb-3 ml-3 w-26 h-8"
+            className="mb-3 ml-3 w-18 h-8"
           />
       );
     } else if (url.includes("instagram.com")) {
@@ -25,20 +25,16 @@ function SnsList({ data }) {
     }
   };
   return (
-    <span className="flex mt-3 basis-1/2 min-w-0">
-      <ol className="text-yellow-400">
+    <div className="flex mt-3 basis-1/2 min-w-0 text-yellow-400">
         📬contacts
         {state?.sns.map((item) => {
           return (
-            <li id={Math.random()}>
               <a href={item} target="_blank">
                 {isValidSns(item)}
               </a>
-            </li>
           );
         })}
-      </ol>
-    </span>
+    </div>
   );
 }
 
