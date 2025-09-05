@@ -27,6 +27,7 @@ function Home() {
   return (
     <div className={homePageStyle.base_note}>
       <Dither
+        className="fixed h-full w-full"
         waveColor={[0, 1, 0]}
         disableAnimation={false}
         enableMouseInteraction={true}
