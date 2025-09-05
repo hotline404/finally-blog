@@ -35,13 +35,13 @@ function Home() {
         waveAmplitude={0}
         waveFrequency={3}
         waveSpeed={0.05}
-      >
+      />
         <Provider data={run()} />
         <MainBox BoxAttribute={homePageStyle.page}>
           <Header />
           <ListBox />
         </MainBox>
-      </Dither>
+      
     </div>
   );
 }
