@@ -5,7 +5,7 @@ import { mixtureStyle } from "@/components/style/mixture/mixture";
 import Header from "@/components/header/Header";
 import ListBox from "@/components/box/ListBox";
 import Provider from "@/store/Provider.jsx";
-import Dither from "./Dither";
+import Dither from "../components/Dither";
 const { getNotion } = require("../API/service.js");
 require("dotenv").config();
 
