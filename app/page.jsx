@@ -26,23 +26,23 @@ function Home() {
   const homePageStyle = mixtureStyle;
   return (
     <div className={homePageStyle.base_note}>
-      <Dither
-        className="fixed h-full w-full"
-        waveColor={[0, 1, 0]}
-        disableAnimation={false}
-        enableMouseInteraction={true}
-        mouseRadius={0.3}
-        colorNum={4}
-        waveAmplitude={0}
-        waveFrequency={3}
-        waveSpeed={0.05}
-      />
-        <Provider data={run()} />
-        <MainBox BoxAttribute={homePageStyle.page}>
-          <Header />
-          <ListBox />
-        </MainBox>
-      
+      <div className="fixed w-full h-full">
+        <Dither
+          waveColor={[0, 1, 0]}
+          disableAnimation={false}
+          enableMouseInteraction={true}
+          mouseRadius={0.3}
+          colorNum={4}
+          waveAmplitude={0}
+          waveFrequency={3}
+          waveSpeed={0.05}
+        />
+      </div>
+      <Provider data={run()} />
+      <MainBox BoxAttribute={homePageStyle.page}>
+        <Header />
+        <ListBox />
+      </MainBox>
     </div>
   );
 }
