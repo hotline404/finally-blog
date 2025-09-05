@@ -34,7 +34,7 @@ function Info() {
 
   return (
     <div className="fixed flex flex-col h-[100%] justify-center items-center inset-0 bg-black/70 z-50">
-      <div className="flex w-[50%] h-full justify-center ">
+      <div className="flex flex-col w-[50%] h-full justify-center ">
         <div className="flex mt-16 text-yellow-400 ">
           <img
             className="h-50 w-50 object-contain rounded-full"
@@ -50,12 +50,14 @@ function Info() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col mt-6 gap-1">
+        <div className="flex mt-6 gap-1">
           <ProjectList data={res} />
           <SnsList data={res} />
         </div>
       </div>
-        <BackButton className="fixed top-0 right-0">❌</BackButton>
+      <div className="fixed top-0 right-10">
+        <BackButton >❌</BackButton>
+      </div>
     </div>
   );
 }
