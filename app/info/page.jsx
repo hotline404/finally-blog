@@ -50,7 +50,7 @@ function Info() {
             </p>
           </div>
         </div>
-        <div className="flex flex-row mt-6 gap-6">
+        <div className="flex flex-row mt-6 gap-1">
           <ProjectList data={res} />
           <SnsList data={res} />
         </div>
