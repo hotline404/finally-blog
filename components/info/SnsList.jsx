@@ -9,9 +9,19 @@ function SnsList({ data }) {
 
   const isValidSns = (url) => {
     if (url.includes("x.com")) {
-      return "트위터";
+      return (
+        <img
+            src='https://img.shields.io/badge/-x-000000?logo=x&logoColor=white'
+            alt='x 로고'
+            className="mb-3 ml-3 w-26 h-8"
+          />
+      );
     } else if (url.includes("instagram.com")) {
-      return "인스타그램";
+      return <img
+            src='https://img.shields.io/badge/-instagram-FF0069?logo=instagram&logoColor=white'
+            alt='instagram 로고'
+            className="mb-3 ml-3 w-26 h-8"
+          />;
     }
   };
   return (
