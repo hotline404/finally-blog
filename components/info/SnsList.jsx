@@ -15,7 +15,7 @@ function SnsList({ data }) {
     }
   };
   return (
-    <span className="flex ml-3 basis-1/2 min-w-0">
+    <span className="flex mt-3 basis-1/2 min-w-0">
       <ol className="text-yellow-400">
         📬contacts
         {state?.sns.map((item) => {
