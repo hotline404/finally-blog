@@ -50,12 +50,14 @@ function Info() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col mt-6 gap-1">
+        <div className="flex mt-6 gap-1">
           <ProjectList data={res} />
           <SnsList data={res} />
         </div>
       </div>
-        <BackButton className="fixed top-0 right-0">❌</BackButton>
+      <div className="fixed top-0 right-0">
+        <BackButton >❌</BackButton>
+      </div>
     </div>
   );
 }
