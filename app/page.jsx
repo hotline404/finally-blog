@@ -5,6 +5,7 @@ import { mixtureStyle } from "@/components/style/mixture/mixture";
 import Header from "@/components/header/Header";
 import ListBox from "@/components/box/ListBox";
 import Provider from "@/store/Provider.jsx";
+import Dither from "./Dither";
 const { getNotion } = require("../API/service.js");
 require("dotenv").config();
 
@@ -25,11 +26,22 @@ function Home() {
   const homePageStyle = mixtureStyle;
   return (
     <div className={homePageStyle.base_note}>
-      <Provider data={run()}/>
-      <MainBox BoxAttribute={homePageStyle.page}>
-        <Header />
-        <ListBox />
-      </MainBox>
+      <Dither
+        waveColor={[0, 1, 0]}
+        disableAnimation={false}
+        enableMouseInteraction={true}
+        mouseRadius={0.3}
+        colorNum={4}
+        waveAmplitude={0}
+        waveFrequency={3}
+        waveSpeed={0.05}
+      >
+        <Provider data={run()} />
+        <MainBox BoxAttribute={homePageStyle.page}>
+          <Header />
+          <ListBox />
+        </MainBox>
+      </Dither>
     </div>
   );
 }
