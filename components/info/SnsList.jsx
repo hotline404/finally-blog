@@ -11,7 +11,7 @@ function SnsList({ data }) {
     if (url.includes("x.com")) {
       return (
         <img
-          src="https://img.shields.io/badge/-x-000000?logo=x&logoColor=white"
+          src="https://img.shields.io/badge/--000000?logo=x&logoColor=white"
           alt="x 로고"
           className="mb-3 ml-3 w-18 h-18"
         />
@@ -19,7 +19,7 @@ function SnsList({ data }) {
     } else if (url.includes("instagram.com")) {
       return (
         <img
-          src="https://img.shields.io/badge/-instagram-FF0069?logo=instagram&logoColor=white"
+          src="https://img.shields.io/badge/--FF0069?logo=instagram&logoColor=white"
           alt="instagram 로고"
           className="mb-3 ml-3 w-18 h-18"
         />
