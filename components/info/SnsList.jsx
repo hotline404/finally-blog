@@ -29,7 +29,7 @@ function SnsList({ data }) {
   return (
     <div className="flex flex-col mt-3 basis-1/2 min-w-0 text-yellow-400">
       <span className="flex-1">📬contacts</span>
-      <div className="flex">
+      <div className="flex mt-1">
         {state?.sns.map((item) => {
           return (
             <a href={item} target="_blank">
