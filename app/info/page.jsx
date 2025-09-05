@@ -55,7 +55,9 @@ function Info() {
           <SnsList data={res} />
         </div>
       </div>
+      <div className="fixed top-0 right-0">
         <BackButton className="fixed top-0 right-0">❌</BackButton>
+      </div>
     </div>
   );
 }
