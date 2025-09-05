@@ -7,7 +7,7 @@ function BackButton(props) {
   
 
   return (
-    <button className="mt-4 text-lg text-yellow-400 hover:cursor-pointer" onClick={() => {router.back()}} >
+    <button className="fixed top-0 right-0 mt-4 text-lg text-yellow-400 hover:cursor-pointer" onClick={() => {router.back()}} >
       {props.children}
     </button>
   )
