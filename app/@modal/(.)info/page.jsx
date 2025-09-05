@@ -1,14 +1,3 @@
-//step 1 rfce ✅
-//step 2 return box ✅
-//step 3 button back ✅
-//step 4 make components
-// step 4-1 common info (name, email, github)
-// step 4-2 skill img (list > img)
-// step 4-3 primary project list with link
-// step 4-4 sns link list with link
-// step 4-5 ...
-//step 5 import components ✅
-//step 6 style components
 import React from "react";
 import BackButton from "@/components/Button/BackButton";
 import CommonInfo from "../../../components/info/CommonInfo";
@@ -44,15 +33,15 @@ function Info() {
   const res = tryGet();
 
   return (
-    <div className="fixed flex flex-col justify-center items-center inset-0 bg-black/70 z-50">
-      <div className="flex flex-col w-[50%] justify-center ">
+    <div className="fixed flex flex-col h-[100%] justify-center items-center inset-0 bg-black/70 z-50">
+      <div className="flex w-[50%] h-full justify-center ">
         <div className="flex mt-16 text-yellow-400 ">
           <img
             className="h-50 w-50 object-contain rounded-full"
             src="/my-notion-face-portrait.png"
             alt="me-image"
           />
-          <div className="flex-col">
+          <div className="">
             <CommonInfo data={res} className="flex-col justify-end " />
             <SkillInfo data={res} />
             <p className="ml-3">
@@ -61,13 +50,12 @@ function Info() {
             </p>
           </div>
         </div>
-          <div className="flex flex-col mt-6">
-            <ProjectList data={res} />
-            <SnsList data={res} />
-          </div>
+        <div className="flex flex-col mt-6 gap-1">
+          <ProjectList data={res} />
+          <SnsList data={res} />
+        </div>
       </div>
-
-      <BackButton className="[&>button]:text-yellow-300">❌</BackButton>
+        <BackButton className="fixed top-0 right-0">❌</BackButton>
     </div>
   );
 }
