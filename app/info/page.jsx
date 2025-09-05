@@ -33,7 +33,7 @@ function Info() {
   const res = tryGet();
 
   return (
-    <div className="fixed flex flex-col h-full justify-center items-center inset-0 bg-black/70 z-50">
+    <div className="fixed flex flex-col h-[100%] justify-center items-center inset-0 bg-black/70 z-50">
       <div className="flex w-[50%] h-full justify-center ">
         <div className="flex mt-16 text-yellow-400 ">
           <img
