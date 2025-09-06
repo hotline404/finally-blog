@@ -45,8 +45,8 @@ function Info() {
             <CommonInfo data={res} className="flex-col justify-end " />
             <SkillInfo data={res} />
             <p className="ml-3">
-              안녕하세요 혁신의 한 부분이 되려고 하는 개발자 Paskal입니다.
-              잘부탁드려요 흐흐
+              안녕하세요 프론트엔드 개발자 Paskal입니다.
+              재밌게 보고 가세요!
             </p>
           </div>
         </div>
