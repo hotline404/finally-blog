@@ -15,7 +15,7 @@ function List(props) {
 
   return (
     <ol className={mixtureStyle.postList}>
-      <div>
+      <div className="flex justify-center">
       {props.lists.map((list) => {
         return (
           <li key={list.id} onClick={() => onClickHandler(list.id)}>
