@@ -6,8 +6,8 @@ export const position = {
   searchBox: "flex justify-end",
   tagButton: "",
   input: "",
-  postListBox: "flex justify-center",
-  postList: "flex flex-wrap ",
+  postListBox: "flex justify-center items-start",
+  postList: "flex items-center flex-wrap ",
 
   modal: "",
   modalBackground: "",
