@@ -7,7 +7,7 @@ export const position = {
   tagButton: "",
   input: "",
   postListBox: "flex justify-center items-start",
-  postList: "flex items-center flex-wrap ",
+  postList: "flex flex-wrap ",
 
   modal: "",
   modalBackground: "",
