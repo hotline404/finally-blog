@@ -14,7 +14,7 @@ function Modal(props) {
         }}
       ></div>
       <div className="absolute flex justify-center inset-0 items-center pointer-events-none">
-        <div className="pointer-events-auto flex justify-center inset-0">{props.children}</div>
+        <div className="absolute pointer-events-auto flex justify-center items-center inset-0">{props.children}</div>
       </div>
       <div className="fixed top-0 right-10">
         <BackButton>❌</BackButton>
