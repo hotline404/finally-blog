@@ -35,25 +35,25 @@ function Info() {
 
   return (
     <Modal>
-      <div className="flex flex-col absolute justify-center inset-0 items-center pointer-events-auto">
-        <div className="flex mt-16 text-yellow-400 ">
-          <img
-            className="h-50 w-50 object-contain rounded-full"
-            src="/my-notion-face-portrait.png"
-            alt="me-image"
-          />
-          <div className="">
-            <CommonInfo data={res} className="flex-col justify-end " />
-            <SkillInfo data={res} />
-            <p className="ml-3">
-              안녕하세요 프론트엔드 개발자 Paskal입니다. 재밌게 보고 가세요!
-            </p>
-          </div>
+      <div className="flex flex-col">
+      <div className="flex mt-16 text-yellow-400 ">
+        <img
+          className="h-50 w-50 object-contain rounded-full"
+          src="/my-notion-face-portrait.png"
+          alt="me-image"
+        />
+        <div className="">
+          <CommonInfo data={res} className="flex-col justify-end " />
+          <SkillInfo data={res} />
+          <p className="ml-3">
+            안녕하세요 프론트엔드 개발자 Paskal입니다. 재밌게 보고 가세요!
+          </p>
         </div>
-        <div className="flex mt-6 gap-1">
-          <ProjectList data={res} />
-          <SnsList data={res} />
-        </div>
+      </div>
+      <div className="flex mt-6 gap-1">
+        <ProjectList data={res} />
+        <SnsList data={res} />
+      </div>
       </div>
     </Modal>
   );

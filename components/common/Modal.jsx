@@ -13,8 +13,12 @@ function Modal(props) {
           router.back();
         }}
       ></div>
-      
+      <div
+        className="absolute flex justify-center inset-0 items-center pointer-events-auto
+      "
+      >
         {props.children}
+      </div>
       <div className="fixed top-0 right-10">
         <BackButton>❌</BackButton>
       </div>
