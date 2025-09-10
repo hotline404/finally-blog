@@ -1,9 +1,19 @@
 "use client";
 import BackButton from "../Button/BackButton";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 function Modal(props) {
   const router = useRouter();
+  useEffect(() => {
+    const escKeyClose = (e) => {
+      if (e.keyCode === 27) {
+        router.back()
+      } 
+    }
+    window.addEventListener("keydown", escKeyClose)
+    return () => window.removeEventListener("keydown", escKeyClose)
+  }, [])
 
   return (
     <div className="fixed inset-0 h-screen w-full z-50 flex justify-center items-center">
