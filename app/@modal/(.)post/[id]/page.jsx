@@ -24,14 +24,12 @@ function Post({ params }) {
 
   return (
     <Modal>
-      <div className="absolute flex justify-center inset-0 items-center pointer-events-auto">
-        <div className="resize bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-[80%] h-[80%]">
+        <div className="absolute flex justify-center inset-0 items-center pointer-events-auto resize bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-[80%] h-[80%]">
           <h2 className="italic">/* P O S T P A G E */</h2>
           <div className="h-[90%]">
             <Article data={result} />
           </div>
         </div>
-      </div>
     </Modal>
   );
 }
