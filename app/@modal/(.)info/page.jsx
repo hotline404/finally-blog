@@ -35,6 +35,7 @@ function Info() {
 
   return (
     <Modal>
+      <div className="absolute flex justify-center inset-0 items-center pointer-events-auto ">
       <div className="flex flex-col">
         <div className="flex mt-16 text-yellow-400 ">
           <img
@@ -54,6 +55,7 @@ function Info() {
           <ProjectList data={res} />
           <SnsList data={res} />
         </div>
+      </div>
       </div>
     </Modal>
   );
