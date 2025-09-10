@@ -14,7 +14,7 @@ function Modal(props) {
         }}
       ></div>
       <div
-        className="absolute flex justify-center inset-0 items-center pointer-events-auto
+        className="relative flex justify-center inset-0 items-center pointer-events-none w-[80%] h-[80%]
       "
       >
         {props.children}
@@ -27,3 +27,7 @@ function Modal(props) {
 }
 
 export default Modal;
+
+
+//relative flex justify-center inset-0 items-center pointer-events-none w-[80%] h-[80%]
+//resize absolute bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-full h-full
