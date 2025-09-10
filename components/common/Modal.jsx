@@ -12,7 +12,7 @@ function Modal(props) {
         className="absolute inset-0 bg-black/70 h-screen w-full"
         onClick={() => {router.back()}}
       ></div>
-      <div className="absolute flex justify-center inset-0 z-10 items-center">
+      <div className="absolute flex justify-center inset-0 items-center">
         {props.children}
         </div>
       <div className="fixed top-0 right-10">
