@@ -3,7 +3,7 @@ import BackButton from "../Button/BackButton";
 import {useRouter} from 'next/navigation'
 
 
-function Modal({ children }) {
+function Modal(props) {
   const router = useRouter();
 
   return (
@@ -13,7 +13,7 @@ function Modal({ children }) {
         onClick={() => {router.back()}}
       ></div>
       <div className="resize bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-[80%] h-[80%]">
-        {children}
+        {props.children}
       </div>
       <div className="fixed top-0 right-10">
         <BackButton>❌</BackButton>
