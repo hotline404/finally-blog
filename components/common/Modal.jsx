@@ -7,7 +7,7 @@ function Modal(props) {
   const router = useRouter();
 
   return (
-    <div className="fixed inset-0 h-screen w-full z-50">
+    <div className="fixed inset-0 h-screen w-full z-50 flex justify-center items-center">
       <div
         className="absolute inset-0 bg-black/70 h-screen w-full"
         onClick={() => {router.back()}}
