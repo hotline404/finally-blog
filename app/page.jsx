@@ -30,7 +30,7 @@ function Home() {
         <Dither
           waveColor={[0, 1, 0]}
           disableAnimation={false}
-          enableMouseInteraction={true}
+          enableMouseInteraction={false}
           mouseRadius={0.3}
           colorNum={4}
           waveAmplitude={0}
