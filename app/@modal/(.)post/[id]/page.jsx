@@ -24,9 +24,11 @@ function Post({ params }) {
 
   return (
     <Modal>
-      <h2 className="italic">/* P O S T P A G E */</h2>
-      <div className="h-[90%]">
-        <Article data={result} />
+      <div className="resize bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-[80%] h-[80%]">
+        <h2 className="italic">/* P O S T P A G E */</h2>
+        <div className="h-[90%]">
+          <Article data={result} />
+        </div>
       </div>
     </Modal>
   );
