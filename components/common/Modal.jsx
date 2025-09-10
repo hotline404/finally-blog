@@ -7,12 +7,14 @@ function Modal(props) {
   const router = useRouter();
 
   return (
-    <div className="fixed h-screen w-full">
+    <div className="fixed inset-0 h-screen w-full">
       <div
-        className="fixed bg-black/70 h-screen w-full z-50"
+        className="absolute inset-0 bg-black/70 h-screen w-full z-50"
         onClick={() => {router.back()}}
       ></div>
+      <div className="relative">
         {props.children}
+        </div>
       <div className="fixed top-0 right-10">
         <BackButton>❌</BackButton>
       </div>
