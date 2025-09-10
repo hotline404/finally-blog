@@ -2,6 +2,7 @@ import React from "react";
 import { getPost } from "@/API/service";
 import BackButton from "@/components/Button/BackButton";
 import Article from "@/components/common/Article";
+import Modal from "@/components/common/Modal";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -22,17 +23,14 @@ function Post({ params }) {
   });
 
   return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-      <div className="resize bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-[80%] h-[80%]">
+    <Modal>
+      <div className="resize absolute bg-[#EBEBEB] p-6 rounded-xl outline-[#31302B] outline-[5px] w-full h-full pointer-events-auto">
         <h2 className="italic">/* P O S T P A G E */</h2>
         <div className="h-[90%]">
           <Article data={result} />
-          <BackButton className="italic mt-4 text-lg [&>button]:text-gray-500 hover:cursor-pointer">
-            C L O S E
-          </BackButton>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }
 
