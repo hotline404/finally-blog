@@ -13,7 +13,9 @@ function Modal(props) {
         onClick={() => {router.back()}}
       ></div>
       <div className="absolute flex justify-center inset-0 items-center pointer-events-none">
+        <div className='pointer-events-auto'>
         {props.children}
+        </div>
         </div>
       <div className="fixed top-0 right-10">
         <BackButton>❌</BackButton>
