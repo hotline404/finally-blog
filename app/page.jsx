@@ -16,8 +16,8 @@ async function run() {
   // notion api 연결 및 디버깅
   try {
     const res = await getNotion();
-    const test = await fetchDataBase();
-    return test;
+    await fetchDataBase();
+    return res;
   } catch (error) {
     console.error("get error", error);
   }
