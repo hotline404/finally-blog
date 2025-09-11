@@ -8,4 +8,9 @@ module.exports = {
   notion_token_v2: process.env.TOKEN_V2,
 
   notion_user_id: process.env.USER_ID,
+
+  notion_version : process.env.ntn_v,
+
+  notion_data_source : process.env.data_source,
 }
+

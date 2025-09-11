@@ -6,13 +6,11 @@ import Input from "../common/Input";
 import submitForm from "../serverAction/submitForm";
 import useStore from "@/store/state";
 
-
-
 export default function Header() {
-  const {setSearchedData} = useStore();
+  const { setSearchedData } = useStore();
 
-  async function useFormState (query) {
-    const res = await submitForm(query)
+  async function useFormState(query) {
+    const res = await submitForm(query);
     setSearchedData(res);
   }
 
@@ -22,7 +20,7 @@ export default function Header() {
       <SearchBox>
         <form className="w-[100%] flex justify-end" action={useFormState}>
           <Input
-            className='outline-[#31302B]'
+            className="outline-[#31302B]"
             input={{
               name: "검색",
               type: "search",
