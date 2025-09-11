@@ -14,13 +14,6 @@ export default function Header() {
     setSearchedData(res);
   }
 
-  const options = { method: "GET", headers: { accept: "application/json" } };
-
-  fetch(" ", options)
-    .then((res) => res.json())
-    .then((res) => console.log(res))
-    .catch((err) => console.error(err));
-
   return (
     <div className={mixtureStyle.header}>
       <TitleBox>* P a s k a l *</TitleBox>
