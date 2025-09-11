@@ -94,7 +94,7 @@ exports.fetchDataBase = async function () {
     })
     .catch((err) => console.error(err));
 
-  const post = results.map((page) => {
+  const post = results.filter().map((page) => {
     return {
       id: page.id,
       title: page.properties.Name.title[0].text.content,
