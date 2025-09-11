@@ -7,7 +7,7 @@ module.exports = {
       authorization: process.env.NOTION_KEY,
     },
     body: JSON.stringify({
-      filter: { 상태: { status: '"공개"' } },
+      filter: { verification: { status: '"verified"' } },
     }),
   },
 };
