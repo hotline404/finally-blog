@@ -1,9 +1,5 @@
 require("dotenv").config();
-const {
-  notion_key,
-  notion_version
-} = require("./env.js")
-
+const { notion_key, notion_version } = require("./env.js");
 
 module.exports = {
   postDBOptions: {
@@ -15,6 +11,7 @@ module.exports = {
       "Notion-Version": notion_version,
     },
     body: JSON.stringify({
+      filter: { 상태: { status: "공개" }, category: { status: "post" } },
     }),
   },
 };
