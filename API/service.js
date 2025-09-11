@@ -89,8 +89,8 @@ exports.getInfo = async function () {
 
 
 exports.fetchDataBase = async function () {
-
-  const res = await fetch(`https://api.notion.com/v1/databases/${notion_DB}`, postDBOptions)
+  const options = {method: 'GET', headers: {accept: 'application/json'}};
+  const res = await fetch(`https://api.notion.com/databases/${notion_DB}`, options)
   .then(res => res.json())
   .then(res => console.log("test res in service", res))
   .catch(err => console.error(err));
