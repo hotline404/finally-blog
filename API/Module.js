@@ -32,7 +32,7 @@ module.exports = {
     body: JSON.stringify({
       filter: {
         property: "category",
-        status: {
+        select: {
           equals: "info"
         }
       }

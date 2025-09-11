@@ -6,7 +6,7 @@ import Header from "@/components/header/Header";
 import ListBox from "@/components/box/ListBox";
 import Provider from "@/store/Provider.jsx";
 import Dither from "../components/Dither";
-const { getNotion } = require("../API/service.js");
+const { getNotion, fetchDataBase } = require("../API/service.js");
 require("dotenv").config();
 
 //page 정보
@@ -15,7 +15,7 @@ export const dynamic = "force-dynamic";
 async function run() {
   // notion api 연결 및 디버깅
   try {
-    const res = await getNotion();
+    const res = await fetchDataBase();
     return res;
   } catch (error) {
     console.error("get error", error);

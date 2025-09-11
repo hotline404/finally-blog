@@ -99,7 +99,7 @@ exports.fetchDataBase = async function () {
       id: page.id,
       title: page.properties.Name.title[0].text.content,
       date: page.properties.date,
-      allProperties: page.properties['상태'].status.name,
+      allProperties: page.properties,
       icon: page.icon.emoji,
     };
   });
