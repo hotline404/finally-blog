@@ -6,7 +6,7 @@ import Header from "@/components/header/Header";
 import ListBox from "@/components/box/ListBox";
 import Provider from "@/store/Provider.jsx";
 import Dither from "../components/Dither";
-const { getNotion, fetchDataBase } = require("../API/service.js");
+const { fetchDataBase } = require("../API/service.js");
 require("dotenv").config();
 
 //page 정보

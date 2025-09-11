@@ -5,14 +5,14 @@ import ProjectList from "../../../components/info/ProjectList";
 import SkillInfo from "../../../components/info/SkillInfo";
 import SnsList from "../../../components/info/SnsList";
 import Modal from "@/components/common/Modal";
-import { getInfo } from "@/API/service";
+import { getInfo, fetchDataBaseInfo } from "@/API/service";
 
 export const dynamic = "force-dynamic";
 
 function Info() {
   async function tryGet() {
     try {
-      const res = await getInfo();
+      const res = await fetchDataBaseInfo();
       console.log(
         "res",
         res.filter((e) => e.key === "common")
