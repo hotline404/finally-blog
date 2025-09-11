@@ -7,7 +7,6 @@ module.exports = {
       authorization: process.env.NOTION_KEY,
     },
     body: JSON.stringify({
-      filter: { verification: { status: '"verified"' } },
     }),
   },
 };
