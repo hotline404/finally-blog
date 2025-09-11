@@ -11,7 +11,9 @@ module.exports = {
       "Notion-Version": notion_version,
     },
     body: JSON.stringify({
-      filter: { 상태: "공개", category: "post" },
+      filter: { property: "상태", status: {
+        equals: "공개"
+      } },
     }),
   },
 };
