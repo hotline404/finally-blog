@@ -92,7 +92,7 @@ exports.getInfo = async function () {
 exports.fetchDataBase = async function () {
   const res = await fetch(`https://api.notion.com/v1/data_sources/${notion_data_source}/query`, postDBOptions)
   .then(res => res.json())
-  .then(res => console.log("test res in service", res))
+  .then(res => {return res})
   .catch(err => console.error(err));
   return res;
 }
