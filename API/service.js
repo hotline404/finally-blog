@@ -4,6 +4,10 @@ const {
 } = require("./instance.js");
 const { Client } = require("@notionhq/client");
 
+const {
+  postOptions
+} = require("./Module.js");
+
 const notion = new Client({
   auth: notion_key,
   request_timeout: 100000,
@@ -84,3 +88,14 @@ exports.getInfo = async function () {
 
   return infomations;
 };
+
+
+exports.fetchDataBase = async function () {
+
+  const res = await fetch(`https://api.notion.com/v1/data_sources/${notion_key}/query`, postOptions)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+  return res;
+}

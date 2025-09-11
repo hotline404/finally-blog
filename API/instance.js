@@ -9,3 +9,4 @@ module.exports = {
 
   notion_user_id: process.env.USER_ID,
 }
+
