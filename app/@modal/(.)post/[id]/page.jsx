@@ -12,7 +12,7 @@ function Post({ params }) {
       const res = await getPost(id);
       const testRes = await fetchDataBase();
       console.log("* r e s   i n   p o s t   m o d a l *", testRes);
-      return res;
+      return testRes;
     } catch (error) {
       console.error("e r r o r   i n   P o s t   m o d a l", error);
     }
