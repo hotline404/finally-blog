@@ -1,7 +1,8 @@
 const {
   notion_key,
   notion_DB,
-} = require("./instance.js");
+  notion_data_source
+} = require("./env.js");
 const { Client } = require("@notionhq/client");
 
 const {
@@ -89,8 +90,7 @@ exports.getInfo = async function () {
 
 
 exports.fetchDataBase = async function () {
-  const options = {method: 'GET', headers: {accept: 'application/json'}};
-  const res = await fetch(`https://api.notion.com/databases/${notion_DB}`, options)
+  const res = await fetch(`https://api.notion.com/v1/data_sources/${notion_data_source}/query`, postDBOptions)
   .then(res => res.json())
   .then(res => console.log("test res in service", res))
   .catch(err => console.error(err));

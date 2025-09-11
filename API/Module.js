@@ -1,4 +1,8 @@
 require("dotenv").config();
+const {
+  notion_key,
+  notion_version
+} = require("./env.js")
 
 
 module.exports = {
@@ -7,8 +11,8 @@ module.exports = {
     headers: {
       accept: "application/json",
       "content-type": "application/json",
-      authorization: process.env.NOTION_KEY,
-      "Notion-Version": "2025-09-03"
+      authorization: notion_key,
+      "Notion-Version": notion_version,
     },
     body: JSON.stringify({
     }),

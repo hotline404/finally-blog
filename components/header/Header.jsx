@@ -16,7 +16,7 @@ export default function Header() {
 
   const options = { method: "GET", headers: { accept: "application/json" } };
 
-  fetch("https://api.notion.com/databases/1331600f02ad806ab077f3cd9a070339", options)
+  fetch(" ", options)
     .then((res) => res.json())
     .then((res) => console.log(res))
     .catch((err) => console.error(err));
