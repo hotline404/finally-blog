@@ -1,13 +1,7 @@
-const {
-  notion_key,
-  notion_DB,
-  notion_data_source
-} = require("./env.js");
+const { notion_key, notion_DB, notion_data_source } = require("./env.js");
 const { Client } = require("@notionhq/client");
 
-const {
-  postDBOptions
-} = require("./Module.js");
+const { postDBOptions } = require("./Module.js");
 
 const notion = new Client({
   auth: notion_key,
@@ -35,7 +29,6 @@ exports.getNotion = async function () {
     };
   });
 
-
   return post;
 };
 
@@ -44,7 +37,6 @@ exports.getPost = async function (page_id) {
     block_id: page_id,
     page_size: 70,
   });
-
 
   return results;
 };
@@ -80,21 +72,28 @@ exports.getInfo = async function () {
 
   const infomations = results.map((info) => {
     return {
-      key : info.properties.Name.title[0].text.content,
-      value : info.properties.info_data.multi_select.map((e) => {return e.name})
-    }
-  })
+      key: info.properties.Name.title[0].text.content,
+      value: info.properties.info_data.multi_select.map((e) => {
+        return e.name;
+      }),
+    };
+  });
 
   return infomations;
 };
 
-
 exports.fetchDataBase = async function () {
-  const { results } = await fetch(`https://api.notion.com/v1/data_sources/${notion_data_source}/query`, postDBOptions)
-  .then(res => res.json())
-  .then(res => {return res})
-  .catch(err => console.error(err));
-  
+  const { results } = await fetch(
+    `https://api.notion.com/v1/data_sources/${notion_data_source}/query`,
+    postDBOptions
+  )
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      return res;
+    })
+    .catch((err) => console.error(err));
+
   const post = results.map((page) => {
     return {
       id: page.id,
@@ -105,5 +104,5 @@ exports.fetchDataBase = async function () {
     };
   });
 
-  return post
-}
+  return post;
+};
