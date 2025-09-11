@@ -6,15 +6,20 @@ import Input from "../common/Input";
 import submitForm from "../serverAction/submitForm";
 import useStore from "@/store/state";
 
-
-
 export default function Header() {
-  const {setSearchedData} = useStore();
+  const { setSearchedData } = useStore();
 
-  async function useFormState (query) {
-    const res = await submitForm(query)
+  async function useFormState(query) {
+    const res = await submitForm(query);
     setSearchedData(res);
   }
+
+  const options = { method: "GET", headers: { accept: "application/json" } };
+
+  fetch("https://api.notion.com/databases/1331600f02ad806ab077f3cd9a070339", options)
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.error(err));
 
   return (
     <div className={mixtureStyle.header}>
@@ -22,7 +27,7 @@ export default function Header() {
       <SearchBox>
         <form className="w-[100%] flex justify-end" action={useFormState}>
           <Input
-            className='outline-[#31302B]'
+            className="outline-[#31302B]"
             input={{
               name: "검색",
               type: "search",
