@@ -45,7 +45,6 @@ exports.getPost = async function (page_id) {
     page_size: 70,
   });
 
-  console.log("results in getPost notion api", results);
 
   return results;
 };
@@ -94,7 +93,7 @@ exports.fetchDataBase = async function () {
 
   const res = await fetch(`https://api.notion.com/v1/data_sources/${notion_key}/query`, postOptions)
   .then(res => res.json())
-  .then(res => console.log(res))
+  .then(res => console.log("test res in service", res))
   .catch(err => console.error(err));
 
   return res;

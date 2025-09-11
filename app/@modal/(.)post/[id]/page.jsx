@@ -1,6 +1,5 @@
 import React from "react";
 import { getPost, fetchDataBase } from "@/API/service";
-import BackButton from "@/components/Button/BackButton";
 import Article from "@/components/common/Article";
 import Modal from "@/components/common/Modal";
 
