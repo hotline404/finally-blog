@@ -94,12 +94,12 @@ exports.fetchDataBase = async function () {
     })
     .catch((err) => console.error(err));
 
-  const post = results.map((page) => {
+  const post = results.filter(page => page.properties['상태'].status === "공개").map((page) => {
     return {
       id: page.id,
       title: page.properties.Name.title[0].text.content,
       date: page.properties.date,
-      allProperties: page.properties['상태'],
+      allProperties: page.properties,
       icon: page.icon.emoji,
     };
   });
