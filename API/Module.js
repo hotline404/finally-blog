@@ -14,6 +14,9 @@ module.exports = {
       filter: { property: "상태", status: {
         equals: "공개"
       } },
+      filter: { property: "category", status:{
+        equals: "post"
+      }}
     }),
   },
 };
