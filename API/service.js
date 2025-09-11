@@ -90,9 +90,20 @@ exports.getInfo = async function () {
 
 
 exports.fetchDataBase = async function () {
-  const res = await fetch(`https://api.notion.com/v1/data_sources/${notion_data_source}/query`, postDBOptions)
+  const { results } = await fetch(`https://api.notion.com/v1/data_sources/${notion_data_source}/query`, postDBOptions)
   .then(res => res.json())
   .then(res => {return res})
   .catch(err => console.error(err));
-  return res;
+  
+  const post = results.map((page) => {
+    return {
+      id: page.id,
+      title: page.properties.Name.title[0].text.content,
+      date: page.properties.date,
+      allProperties: page.properties,
+      icon: page.icon.emoji,
+    };
+  });
+
+  return post
 }
